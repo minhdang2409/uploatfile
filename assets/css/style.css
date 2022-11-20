@@ -1,0 +1,542 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+html {
+    font-family:Arial, Helvetica, sans-serif;
+    scroll-behavior:smooth;
+}
+
+.row::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+/* Common */
+.text-center {
+    text-align:center !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right:-8px;
+
+}
+
+.colum {
+    float:left;
+    padding-left: 8px;
+    padding-right:8px;
+
+}
+
+.w-2 {
+    width:50%
+}
+
+.w-full {
+    width:100%
+}
+
+.w-3 {
+    width:33.333333%;
+}
+
+.mt-32 {
+    margin-top:32px;
+}
+
+.mt-8 {
+    margin-top:8px;
+}
+
+.mt-16 {
+    margin-top:16px
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.pt-32 {
+    padding-top:32px;
+}
+
+.mt-48 {
+    margin-top: 48px;
+}
+
+.pt-16 {
+    padding-top: 16px;
+}
+
+
+.text-white {
+    color:#fff !important;
+} 
+
+.background-white {
+    background-color: #fff !important;
+}
+
+/* Header section */
+#header {
+    height:46.5px;
+    background-color:#000;
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    right:0;
+    z-index: 1;
+
+}
+
+#nav {
+    display:inline-block;
+
+}
+
+#nav .subnav li:hover a, 
+#nav > li:hover > a {
+    color:#000;
+    background-color:#ccc;
+}
+
+#nav >li > a {
+    color:#fff;
+    text-transform:uppercase;
+    /* text-align:center; */
+}
+
+#nav .subnav a {
+    color:#000;
+    padding-left:16px;
+    line-height: 38.5px;
+}
+
+#nav li a {
+    line-height:46.5px;
+    text-decoration:none;
+    font-size:15px;
+    padding:0 24px;
+    display: block;
+}
+
+#nav > li {
+    display:inline-block;
+}
+
+#nav li {
+    position:relative; 
+}
+
+#nav li:hover .subnav {
+    display:block;
+} 
+
+#nav .subnav {
+    display:none;
+    position:absolute;
+    background-color:#fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    top:46.5px;
+    left:0;
+    list-style-type: none;
+    min-width:160px;
+}
+
+#nav .down-icon-header {
+    font-size:14px;
+}
+
+#header .mobile-icon-menu:hover {
+    background-color:#ccc;
+    cursor: pointer;
+}
+
+#header .mobile-icon-menu:hover .menu-icon {
+    color:#000;
+}
+
+#header .header-search:hover {
+    background-color:#f44336;
+    cursor:pointer;
+}
+
+#header .mobile-icon-menu {
+    position: absolute;
+    top:0;
+    right:0;
+    display: none;
+}
+
+.mobile-icon-menu,
+#header .header-search {
+    float: right;
+    
+}
+
+#header .menu-icon {
+    line-height: 46.5px;
+}
+
+.menu-icon,
+#header .search-icon-header {
+    color:#fff;
+    text-align:center;
+    line-height: 46.5px;
+    padding:24px;
+
+
+}
+/* Slider section */
+#slider {
+    position:relative;
+    margin-top:46.5px;
+    padding-top:50%;
+    background: url('/wed-theband/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+
+}
+
+#slider .slider-text {
+    position:absolute;
+    bottom:47px;
+    color:#fff;
+    left:50%;
+    transform:translateX(-50%);
+    text-align:center;
+}
+
+#slider .slider-place {
+    font-size:24px;
+
+}
+
+#slider .slider-about {
+    margin-top:20px;
+    font-weight:bolder;
+    font-size:15px;
+}
+
+/* Content section */
+#content {
+
+}
+
+#content .content-about {
+    padding:74px 16px 112px;
+    width:800px;
+    max-width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+#content .text-1 {
+    font-size: 30px;
+    text-align: center;
+    font-weight:100;
+    letter-spacing:4px;
+
+}
+
+#content .text-2 {
+    font-size:15px;
+    text-align: center;
+    margin:15px 0;
+    opacity: 0.6;
+    font-style:italic;
+
+
+}
+
+#content .text-3 {
+    font-size:15px;
+    text-align:justify;
+    line-height: 1.4;
+    margin-bottom:15px;
+
+}
+
+
+#content .about-img {
+    width: 154px;
+    border-radius:4px;
+}
+
+#content .member-text {
+    font-size:15px;
+    margin:15px 0 ;
+}
+
+/* Tour */
+#content .tour-content {
+    background-color: #000;
+}
+
+.tour-content .tour-list {
+    background-color: #fff;
+}
+
+.tour-list {
+    margin-top:35px;
+}
+
+.tour-list li {
+    color:#757575;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    list-style-type: none;
+}
+
+.tour-list .sold-out {
+    color:#fff;
+    background-color: #f44336;
+    padding: 4px 5px;
+    margin-left:16px;
+
+
+}
+
+.tour-list .three {
+    color: #fff;
+    background-color: #000;
+    float: right;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 50%;
+    margin-top: -2px;
+}
+
+.tour-place .tour-img:hover {
+    opacity: 0.6;
+}
+
+.tour-place .tour-img {
+    display: block;
+}
+
+.tour-place .tour-text {
+    padding:16px;
+    font-size:15px;
+
+}
+
+.tour-place .tour-from {
+    font-size:15px;
+
+}
+
+.tour-place .tour-time {
+    margin : 15px 0;
+    opacity: 0.6;
+
+}
+
+.tour-place .tour-about {
+    margin-bottom:15px;
+
+}
+
+.tour-place .tour-buy-ticket:hover {
+    background-color:#ccc;
+    color:#000;
+}
+
+.tour-place .tour-buy-ticket {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 11px 15px;
+    display:inline-block;
+    border: none;
+}
+
+/* Contact */
+.contact-text {
+    font-size:18px;
+}
+
+.contact-text i[class*="ti-"] {
+    margin-right:15px;
+}
+
+.contact-text a {
+    color:#2196f3;
+}
+
+.contact-text a:hover {
+    opacity: 0.6;
+}
+
+.contact-input {
+    padding: 10px 7px;
+    width: 100%;
+}
+
+.contact-send:hover {
+    background-color:#ccc;
+    color:#000;
+}
+
+.contact-send {
+    float: right;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 16px;
+    font-size: 15px;
+    border:none;
+}
+
+#footer {
+    padding: 64px;
+    text-align: center;
+}
+
+.footer-icon a:hover {
+    opacity: 0.4;
+}
+
+.footer-icon a {
+    text-decoration: none;
+    color:#000;
+    opacity: 0.6;
+    font-size: 25px;
+}
+
+.footer-text {
+    font-size: 15px;
+    color:#000;
+    opacity: 0.6;
+    margin:15px;
+}
+
+.footer-text a {
+    color:#000;
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Modal */
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    display:none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open {
+    display:flex;
+} 
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    position:relative;
+    animation: modalFacein ease 0.5s;
+}
+
+.modal-heading {
+    background-color: #009688;
+    height:130px;
+    text-align: center;
+    line-height: 130px;
+    font-size: 30px;
+    color:#fff;
+    letter-spacing:4px;
+    font-weight: 100;
+}
+
+.modal-close:hover {
+    opacity: 1;
+    background-color: #ccc;
+    color:#000;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    opacity: 0.6;
+}
+
+.modal-body {
+    padding:16px;
+}
+
+.modal-head {
+    margin-bottom: 8px;
+    font-size:15px;
+}
+
+.modal-input {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px 8px;
+}
+
+.modal-pay:hover {
+    color:#000;
+    background-color: #ccc;
+}
+
+.modal-pay {
+    width: 100%;
+    background-color: #009688;
+    border: none;
+    padding: 19px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.modal-footer {
+    margin: 0 15px 15px;
+    float: right;
+    font-size: 15px;
+}
+
+.modal-footer a {
+    color:#2196F3;
+    font-size:15px;
+}
+
+
+
+
+@keyframes modalFacein {
+    from {
+        transform: translateY(-180px);
+        opacity: 0.5;
+
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}
